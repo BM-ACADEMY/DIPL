@@ -2,13 +2,16 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
+import Automation from '@/assets/img/automation.jpg'
+import Fixture from '@/assets/img/fixture.jpg'
+import Manufacturing from '@/assets/img/machining_fixture.png'
 
 export default function Sampleservices() {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // animation duration
+      duration: 1000,
       easing: "ease-in-out",
-      once: true, // animation happens only once
+      once: true,
       mirror: false,
     });
   }, []);
@@ -17,42 +20,40 @@ export default function Sampleservices() {
     {
       id: 1,
       title: "Automation",
-      img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1170&auto=format&fit=crop",
-      aos: "fade-up",
+      img: Automation,
     },
     {
       id: 2,
       title: "Fixtures, Toolings & Gauges",
-      img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1170&auto=format&fit=crop",
-      aos: "fade-up",
+      img: Fixture,
     },
     {
       id: 3,
       title: "Manufacturing",
-      img: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1170&auto=format&fit=crop",
-      aos: "fade-up",
+      img: Manufacturing,
     },
   ];
 
   return (
-    <section className="mb-10 relative bg-gradient-to-b from-gray-50 to-white">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-teal-100/20 rounded-full blur-3xl mix-blend-multiply"></div>
+    <section className="relative bg-gradient-to-b from-gray-50 to-white pb-28 overflow-hidden">
+      {/* Background circle */}
+      <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-teal-100/30 rounded-full blur-3xl mix-blend-multiply pointer-events-none"></div>
 
-      <div className="max-w-7xl mx-auto px-6 py-16">
+      <div className="max-w-7xl mx-auto px-6 py-16 relative z-10">
         {/* Section Heading */}
-        <div className="relative z-10 text-center mb-16" data-aos="zoom-in">
+        <div className="text-center mb-16" data-aos="zoom-in">
           <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
             Our <span className="text-[#008688] not-italic">Services</span>
           </h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto mt-4"></p>
         </div>
 
         {/* Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-          {cards.map((card) => (
+          {cards.map((card, index) => (
             <article
               key={card.id}
-              data-aos={card.aos}
+              data-aos="fade-up"
+              data-aos-delay={index * 200} // stagger animations
               className="relative group overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition duration-500"
             >
               {/* Image */}

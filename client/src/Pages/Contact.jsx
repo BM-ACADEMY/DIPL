@@ -56,7 +56,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="relative bg-gradient-to-br from-[#f0fdfa] to-[#e6fffa] py-16 px-4 sm:px-6 lg:px-20">
+    <section className="relative bg-gradient-to-br from-[#f0fdfa] to-[#e6fffa] py-16 px-4n overflow-hidden sm:px-6 lg:px-20">
       {/* Top Heading */}
       <div className="text-center mt-10 mb-12" data-aos="fade-up">
         <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900">

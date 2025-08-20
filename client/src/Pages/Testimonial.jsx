@@ -2,30 +2,36 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const Reviews = () => {
-  const cardsData = [
+ const cardsData = [
     {
-      name: "Kiran M.",
-      handle: "@kiranm",
+      name: "Rajesh K.",
+      handle: "@automotiveLeader",
       content:
-        "BM Academy helped me land my dream job. Great mentors and real skills.",
+        "Dynamics India's automation solutions transformed our production line. Zero downtime and maximum efficiency!",
     },
     {
-      name: "Lavanya R.",
-      handle: "@lavanyaevents",
+      name: "Sneha P.",
+      handle: "@qualityFirst",
       content:
-        "I always recommend Dada's Kitchen for events—authentic taste and service.",
+        "Their test rigs and vision systems ensure our products meet the highest standards. Customers trust our quality more than ever.",
     },
     {
-      name: "Faizal M.",
-      handle: "@faizalproperties",
+      name: "Vikram S.",
+      handle: "@smartManufacturing",
       content:
-        "Professional and ethical. We bought our dream land through ABM with no stress.",
+        "The robotics implementation simplified complex operations. Skilled manpower redeployed for innovation instead of repetitive tasks.",
     },
     {
-      name: "Meenakshi D.",
-      handle: "@meenakshiwanderlust",
+      name: "Anita G.",
+      handle: "@precisionEngineering",
       content:
-        "TravellersNeed gave us a perfectly planned honeymoon in Kerala. Everything was seamless.",
+        "Fixtures and tooling from Dynamics India are world-class—precision and durability that keep our shop floor running smoothly.",
+    },
+    {
+      name: "Harish R.",
+      handle: "@fabricationWorks",
+      content:
+        "From fabrication to control panels, their end-to-end services gave us a reliable and cost-effective manufacturing partner.",
     },
   ];
 

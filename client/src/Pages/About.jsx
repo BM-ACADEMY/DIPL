@@ -3,10 +3,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const content = {
-  subheadingBar: {
-    from: "from-indigo-600",
-    to: "to-[#DDD9FF]",
-  },
   paragraphs: [
     "At Dynamics India Pvt Ltd, we are driven by innovation, precision, and a passion for engineering excellence. Since our inception, we have been dedicated to delivering high-quality automation solutions, fixtures, tooling, gauges, and manufacturing services that empower industries to operate smarter, faster, and more efficiently.",
     "Our expertise spans across line automation, SPMs, test rigs, vision systems, AGVs, robotics integration, and control panel programming — ensuring every project we undertake is executed with cutting-edge technology and unmatched craftsmanship.",
@@ -16,7 +12,6 @@ const content = {
   ],
   image:
     "https://images.unsplash.com/photo-1531497865144-0464ef8fb9a9?q=80&w=600&h=600&auto=format&fit=crop",
-
 };
 
 export default function About() {
@@ -25,19 +20,17 @@ export default function About() {
   }, []);
 
   return (
-    <div className="relative pt-20 pb-20">
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-teal-100/20 rounded-full blur-3xl mix-blend-multiply"></div>
+    // ✅ overflow-x-hidden prevents unwanted horizontal scroll
+    <div className="relative pt-20 pb-20 overflow-x-hidden">
+      {/* ✅ responsive background glow */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[300px] sm:w-[400px] md:w-[600px] h-[300px] sm:h-[400px] md:h-[600px] bg-teal-100/20 rounded-full blur-3xl mix-blend-multiply pointer-events-none"></div>
 
       <section className="max-w-7xl mx-auto px-4 font-poppins">
         {/* Heading Section */}
         <div className="text-center mb-12" data-aos="zoom-in">
-          <h1 className="text-3xl md:text-4xl uppercase font-semibold text-[#008687]">
-          </h1>
           <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">
-            About{" "}
-            <span className="text-[#008688] not-italic">Us</span>
+            About <span className="text-[#008688] not-italic">Us</span>
           </h1>
-        
         </div>
 
         {/* Content Section */}
@@ -52,8 +45,6 @@ export default function About() {
               src={content.image}
               alt="Main visual"
             />
-
-           
           </div>
 
           {/* Right Content Section */}

@@ -1,19 +1,46 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Automation from '@/assets/img/automation.jpg'
+import Fixture from '@/assets/img/fixture.jpg'
+import Manufacturing from '@/assets/img/Manufacturing.jpg'
 
 const servicesData = [
   {
     title: "Automation",
     items: [
-      { name: "Line Automation", description: "We control the axis and coordinates with man less automation to drive the environment" },
-      { name: "Special Purpose Machines (SPMs)", description: "Simple solutions for complicated areas with our ideas" },
-      { name: "Test Rigs", description: "Your Product Durability and Performance, we assure to your customer" },
-      { name: "Vision Systems", description: "On Spot Quick Quality Assistant with You" },
-      { name: "Automated Guided Vehicles (AGVs)", description: "Manless Movement to Right Place" },
-      { name: "Robotics Implementation", description: "Simplify Your Skilled Areas with Our Robots" },
-      { name: "Panel and Programming Services", description: "Give movement to hardware with our software" },
+      {
+        name: "Line Automation",
+        description:
+          "We control the axis and coordinates with man less automation to drive the environment",
+      },
+      {
+        name: "Special Purpose Machines (SPMs)",
+        description: "Simple solutions for complicated areas with our ideas",
+      },
+      {
+        name: "Test Rigs",
+        description:
+          "Your Product Durability and Performance, we assure to your customer",
+      },
+      {
+        name: "Vision Systems",
+        description: "On Spot Quick Quality Assistant with You",
+      },
+      {
+        name: "Automated Guided Vehicles (AGVs)",
+        description: "Manless Movement to Right Place",
+      },
+      {
+        name: "Robotics Implementation",
+        description: "Simplify Your Skilled Areas with Our Robots",
+      },
+      {
+        name: "Panel and Programming Services",
+        description: "Give movement to hardware with our software",
+      },
     ],
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1170&q=80",
+    image:
+      Automation,
     isAccordion: true,
   },
   {
@@ -24,7 +51,8 @@ Machining tooling
 Assembly jigs
 Measurement gauges
 Custom tooling solutions`,
-    image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1170&q=80",
+    image:
+      Fixture,
   },
   {
     title: "Manufacturing and Fabrication",
@@ -35,7 +63,8 @@ Welding services
 Precision assembly
 Custom fabrication solutions
 Quality control and inspection`,
-    image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1170&q=80",
+    image:
+      Manufacturing,
   },
 ];
 
@@ -59,7 +88,9 @@ const AccordionItem = ({ item, isOpen, onClick }) => (
           transition={{ duration: 0.3 }}
           className="overflow-hidden"
         >
-          <p className="text-gray-600 pb-4 whitespace-pre-line">{item.description}</p>
+          <p className="text-gray-600 pb-4 whitespace-pre-line">
+            {item.description}
+          </p>
         </motion.div>
       )}
     </AnimatePresence>
@@ -82,7 +113,8 @@ const ServiceSection = () => {
             Our <span className="text-[#008688]"> Services</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Cutting-edge solutions tailored to your industrial needs with precision and innovation
+            Cutting-edge solutions tailored to your industrial needs with
+            precision and innovation
           </p>
         </div>
 
@@ -106,7 +138,9 @@ const ServiceSection = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 </div>
                 <div className="absolute -bottom-6 left-6 bg-white p-4 rounded-lg shadow-lg transform -rotate-2 group-hover:rotate-0 transition-transform duration-500">
-                  <span className="text-teal-600 font-bold text-lg">{`0${index + 1}`}</span>
+                  <span className="text-teal-600 font-bold text-lg">{`0${
+                    index + 1
+                  }`}</span>
                 </div>
               </div>
 
@@ -115,7 +149,9 @@ const ServiceSection = () => {
                 <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
                   <div className="flex items-center mb-6">
                     <div className="w-1 h-10 bg-teal-500 mr-4"></div>
-                    <h3 className="text-3xl font-bold text-gray-900">{service.title}</h3>
+                    <h3 className="text-3xl font-bold text-gray-900">
+                      {service.title}
+                    </h3>
                   </div>
 
                   {/* Accordion for Automation */}

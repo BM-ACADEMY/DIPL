@@ -2,13 +2,14 @@ import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
-
+import Banner1 from "../assets/img/banner1.jpg";
+import Banner2 from "../assets/img/banner2.jpg";
+import Banner3 from "../assets/img/banner3.jpg";
 
 const heroData = [
   {
     id: 1,
-    backgroundImage:
-      "https://images.unsplash.com/photo-1523289333742-be1143f6b766?q=80&w=1600&auto=format&fit=crop",
+    backgroundImage: Banner1,
     heading: "Engineering Innovation, Delivering Excellence",
     description:
       "We design and deliver world-class automation solutions that redefine productivity, efficiency, and precision for modern industries.",
@@ -19,8 +20,7 @@ const heroData = [
   },
   {
     id: 2,
-    backgroundImage:
-      "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1600&auto=format&fit=crop",
+    backgroundImage: Banner2,
     heading: "Automation That Empowers",
     description:
       "From line automation and SPMs to robotics and AGVs, our advanced technologies help businesses operate smarter, faster, and more efficiently.",
@@ -31,8 +31,7 @@ const heroData = [
   },
   {
     id: 3,
-    backgroundImage:
-      "https://images.unsplash.com/photo-1556741533-f6acd647d2fb?q=80&w=1600&auto=format&fit=crop",
+    backgroundImage: Banner3,
     heading: "Integrity. Quality. Customer-Centricity.",
     description:
       "Our values drive us to create tailor-made solutions that exceed expectations, ensuring long-term partnerships built on trust and results.",
@@ -43,8 +42,7 @@ const heroData = [
   },
   {
     id: 4,
-    backgroundImage:
-      "https://images.unsplash.com/photo-1565372919700-69b2cd8e3a45?q=80&w=1600&auto=format&fit=crop",
+    backgroundImage: Banner1,
     heading: "Precision at Every Step",
     description:
       "With unmatched craftsmanship and attention to detail, we provide durable and efficient solutions—from concept to commissioning.",
@@ -55,8 +53,7 @@ const heroData = [
   },
   {
     id: 5,
-    backgroundImage:
-      "https://images.unsplash.com/photo-1581092795360-778b5d0b1c34?q=80&w=1600&auto=format&fit=crop",
+    backgroundImage: Banner2,
     heading: "Your Trusted Partner in Industrial Growth",
     description:
       "With a skilled team, state-of-the-art facilities, and relentless innovation, Dynamics India Pvt Ltd helps you stay ahead in today’s evolving industrial landscape.",
@@ -66,7 +63,6 @@ const heroData = [
     },
   },
 ];
-
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -109,23 +105,30 @@ const Home = () => {
   const slide = heroData[currentSlide];
 
   return (
-    <div className="relative w-full h-[95vh] overflow-hidden group bg-black" id="home">
+    <div
+      className="relative w-full h-[95vh] overflow-hidden group bg-black"
+      id="home"
+    >
       {/* Background image with fade transition */}
       <AnimatePresence mode="popLayout">
-        <motion.div
-          key={slide.id}
-          className="absolute inset-0"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 1 }}
-        >
-         <img
-  src={slide.backgroundImage}
-  alt={slide.heading}
-  className="w-full h-full object-cover object-top brightness-50"
+       <motion.div
+  key={slide.id}
+  className="absolute inset-0"
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  exit={{ opacity: 0 }}
+  transition={{ duration: 1 }}
+>
+  <img
+    src={slide.backgroundImage}
+    alt={slide.heading}
+    className="w-full h-full object-cover object-top"
 />
-        </motion.div>
+
+  {/* Black Overlay */}
+  <div className="absolute inset-0 bg-black/40"></div>
+</motion.div>
+
       </AnimatePresence>
 
       {/* Content */}
@@ -137,23 +140,27 @@ const Home = () => {
           transition={{ duration: 0.8 }}
           className="flex flex-col items-center max-w-4xl"
         >
-          <h1 className="text-3xl sm:text-5xl font-bold mb-4">{slide.heading}</h1>
-          <p className="text-base sm:text-lg text-gray-200 mb-6">{slide.description}</p>
+          <h1 className="text-3xl sm:text-5xl font-bold mb-4">
+            {slide.heading}
+          </h1>
+          <p className="text-base sm:text-lg text-gray-200 mb-6">
+            {slide.description}
+          </p>
 
           <div className="flex flex-col sm:flex-row gap-3">
-  <Link
-    to="/contact"
-    className="px-6 py-3 rounded-md font-semibold text-lg bg-emerald-600 hover:bg-emerald-500 transition"
-  >
-    {slide.cta.apply.text}
-  </Link>
-  <Link
-    to="/contact"
-    className="px-6 py-3 rounded-md font-semibold text-lg bg-white/10 hover:bg-white/20 border border-white/20"
-  >
-    {slide.cta.consult.text}
-  </Link>
-</div>
+            <Link
+              to="/contact"
+              className="px-6 py-3 rounded-md font-semibold text-lg bg-emerald-600 hover:bg-emerald-500 transition"
+            >
+              {slide.cta.apply.text}
+            </Link>
+            <Link
+              to="/contact"
+              className="px-6 py-3 rounded-md font-semibold text-lg bg-white/30 hover:bg-white/20 border border-white/20"
+            >
+              {slide.cta.consult.text}
+            </Link>
+          </div>
         </motion.div>
       </div>
 
