@@ -74,14 +74,11 @@ const ServiceSection = () => {
   };
 
   return (
-    <section className="bg-gradient-to-b from-gray-50 to-white py-20 px-6 lg:px-20">
+    <section className="bg-gradient-to-br from-[#f0fdfa] to-[#e6fffa] py-20 px-6 lg:px-20">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-block px-4 py-2 bg-teal-100 rounded-full mb-4">
-            <span className="text-teal-600 font-semibold">What We Offer</span>
-          </div>
-          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
+          <h2 className="pt-5 text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
             Our <span className="text-[#008688]"> Services</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">

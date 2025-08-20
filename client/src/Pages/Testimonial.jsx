@@ -8,28 +8,24 @@ const Reviews = () => {
       handle: "@kiranm",
       content:
         "BM Academy helped me land my dream job. Great mentors and real skills.",
-      role: "Student",
     },
     {
       name: "Lavanya R.",
       handle: "@lavanyaevents",
       content:
         "I always recommend Dada's Kitchen for events—authentic taste and service.",
-      role: "Event Manager",
     },
     {
       name: "Faizal M.",
       handle: "@faizalproperties",
       content:
         "Professional and ethical. We bought our dream land through ABM with no stress.",
-      role: "Real Estate Client",
     },
     {
       name: "Meenakshi D.",
       handle: "@meenakshiwanderlust",
       content:
         "TravellersNeed gave us a perfectly planned honeymoon in Kerala. Everything was seamless.",
-      role: "Traveller",
     },
   ];
 
@@ -77,7 +73,6 @@ const Reviews = () => {
             <div className="flex items-center gap-1">
               <p className="font-semibold text-gray-900">{card.name}</p>
             </div>
-            <span className="text-xs text-gray-500">{card.role}</span>
           </div>
         </div>
         <p className="text-gray-700 py-4 italic">"{card.content}"</p>

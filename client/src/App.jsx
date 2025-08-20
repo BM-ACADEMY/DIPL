@@ -1,30 +1,30 @@
 // src/App.js
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./Pages/Layout/Header"; // adjust the path as needed
-import Homemainsection from "./Pages/main/Homesection"; // adjust the path as needed
+import Header from "./Pages/Layout/Header";
+import Homemainsection from "./Pages/main/Homesection";
 import Footer from "./Pages/Layout/Footer";
-import Services from "./Pages/main/Services";
-import { Contact } from "lucide-react";
 import Careermain from "./Pages/main/careermain";
 import ServiceSection from "./Pages/main/Services";
-
-
-
+import ScrollToTop from "./ScrollToTop"; // ✅ Import
+import Contact from "./Pages/Contact";
+import { Toaster } from "react-hot-toast"; // ✅ Import Toaster
+import WhatsappFloatButton from "./Pages/WhatsappFloatButton";
 
 const App = () => {
   return (
     <Router>
       <Header />
-
-        <Routes>
-          <Route path="/" element={<Homemainsection/>} />
-          <Route path="/services" element={<ServiceSection/>} />
-          <Route path="/career" element={<Careermain/>} />
-          <Route path="/contact" element={<Contact/>} />
-          
-        </Routes>
-      <Footer/>
+      <ScrollToTop /> {/* ✅ Add here */}
+      <Routes>
+        <Route path="/" element={<Homemainsection />} />
+        <Route path="/services" element={<ServiceSection />} />
+        <Route path="/career" element={<Careermain />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <Footer />
+      <WhatsappFloatButton />
+      <Toaster position="top-center" reverseOrder={false} />
     </Router>
   );
 };

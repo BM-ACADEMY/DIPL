@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 
 const heroData = [
@@ -140,19 +141,19 @@ const Home = () => {
           <p className="text-base sm:text-lg text-gray-200 mb-6">{slide.description}</p>
 
           <div className="flex flex-col sm:flex-row gap-3">
-            <a
-              href={slide.cta.apply.href}
-              className="px-6 py-3 rounded-md font-semibold text-lg bg-emerald-600 hover:bg-emerald-500 transition"
-            >
-              {slide.cta.apply.text}
-            </a>
-            <a
-              href={slide.cta.consult.href}
-              className="px-6 py-3 rounded-md font-semibold text-lg bg-white/10 hover:bg-white/20 border border-white/20"
-            >
-              {slide.cta.consult.text}
-            </a>
-          </div>
+  <Link
+    to="/contact"
+    className="px-6 py-3 rounded-md font-semibold text-lg bg-emerald-600 hover:bg-emerald-500 transition"
+  >
+    {slide.cta.apply.text}
+  </Link>
+  <Link
+    to="/contact"
+    className="px-6 py-3 rounded-md font-semibold text-lg bg-white/10 hover:bg-white/20 border border-white/20"
+  >
+    {slide.cta.consult.text}
+  </Link>
+</div>
         </motion.div>
       </div>
 

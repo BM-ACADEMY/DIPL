@@ -3,13 +3,11 @@ import { Mail, Phone, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
 import Logo from "@/assets/img/logo.png";
-import { EnquiryFormModal } from "../Enquiryform";
 
 const Header = () => {
   const location = useLocation();
   const [isOffcanvasOpen, setIsOffcanvasOpen] = useState(false);
   const [openMobileDropdown, setOpenMobileDropdown] = useState(null);
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
   
 
@@ -26,7 +24,6 @@ const Header = () => {
     },
     { name: "Career", path: "/career" },
     { name: "Contact", path: "/contact" },
-    { name: "Enquiry Form", action: "modal" }, // Added enquiry as last nav item
   ];
 
   const dropdownContentVariants = {
@@ -58,7 +55,8 @@ const Header = () => {
         <div className=" px-4 md:px-8 lg:px-16 flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center space-x-4">
-            <img src={Logo} alt="Logo" className="w-24 h-16" />
+            <Link to="/">
+            <img src={Logo} alt="Logo" className="w-24 h-16" /></Link>
           </div>
 
           {/* Desktop Menu */}
@@ -68,7 +66,6 @@ const Header = () => {
                 {/* Enquiry as modal trigger */}
                 {item.action === "modal" ? (
                   <button
-                    onClick={() => setIsModalOpen(true)}
                     className="bg-[#028789] text-white font-semibold px-3 py-1 rounded-md hover:bg-[#026b6c] transition-colors duration-200"
                   >
                     {item.name}
@@ -149,7 +146,6 @@ const Header = () => {
                     {item.action === "modal" ? (
                       <button
                         onClick={() => {
-                          setIsModalOpen(true);
                           setIsOffcanvasOpen(false);
                         }}
                         className="bg-[#028789] text-white w-full font-semibold px-3 py-2 rounded-md hover:bg-[#026b6c] transition-colors duration-200"
@@ -216,8 +212,7 @@ const Header = () => {
         )}
       </AnimatePresence>
 
-      {/* Enquiry Form Modal */}
-      <EnquiryFormModal isOpen={isModalOpen} onOpenChange={setIsModalOpen} />
+      
     </header>
   );
 };

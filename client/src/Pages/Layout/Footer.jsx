@@ -1,5 +1,6 @@
 import React from "react";
 import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { Link } from "react-router-dom"; // ✅ Import Link
 import Logo from "@/assets/img/logo.png"; // <-- Import your logo image
 
 export default function Example() {
@@ -16,9 +17,7 @@ export default function Example() {
           />
 
           <p className="mt-6 text-sm text-gray-300">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            since the 1500s.
+            Dynamics India Pvt Ltd delivers cutting-edge automation and engineering solutions with precision, durability, and innovation. We empower industries to operate smarter, faster, and more efficiently with tailor-made solutions. 
           </p>
 
           {/* Social Icons */}
@@ -57,31 +56,21 @@ export default function Example() {
           <div>
             <h2 className="font-semibold mb-5 text-gray-100">Company</h2>
             <ul className="text-sm space-y-2 text-gray-300">
-              <li><a href="#" className="hover:text-[#018687]">Home</a></li>
-              <li><a href="#" className="hover:text-[#018687]">About us</a></li>
-              <li><a href="#" className="hover:text-[#018687]">Contact us</a></li>
-              <li><a href="#" className="hover:text-[#018687]">Privacy policy</a></li>
+              <li><Link to="/" className="hover:text-[#018687]">Home</Link></li>
+              <li><Link to="/services" className="hover:text-[#018687]">Services</Link></li>
+              <li><Link to="/career" className="hover:text-[#018687]">Career</Link></li>
+              <li><Link to="/contact" className="hover:text-[#018687]">Contact</Link></li>
             </ul>
           </div>
 
-          {/* Services Column */}
+          {/* Services Column (If dynamic, update later) */}
           <div>
             <h2 className="font-semibold mb-5 text-gray-100">Services</h2>
             <ul className="text-sm space-y-2 text-gray-300">
-              <li><a href="#" className="hover:text-[#018687]">Web Development</a></li>
-              <li><a href="#" className="hover:text-[#018687]">Mobile App Development</a></li>
-              <li><a href="#" className="hover:text-[#018687]">UI/UX Design</a></li>
-              <li><a href="#" className="hover:text-[#018687]">Digital Marketing</a></li>
+              <li><Link to="/services" className="hover:text-[#018687]">Automation</Link></li>
+              <li><Link to="/services" className="hover:text-[#018687]">Fixtures, Toolings and Gauges</Link></li>
+              <li><Link to="/services" className="hover:text-[#018687]">Manufacturing and Fabrication</Link></li>
             </ul>
-          </div>
-
-          {/* Contact Info */}
-          <div>
-            <h2 className="font-semibold mb-5 text-gray-100">Get in touch</h2>
-            <div className="text-sm space-y-2 text-gray-300">
-              <p>+1-212-456-7890</p>
-              <p>contact@example.com</p>
-            </div>
           </div>
 
         </div>
