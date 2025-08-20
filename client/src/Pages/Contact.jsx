@@ -116,15 +116,15 @@ const Contact = () => {
           data-aos="fade-left"
         >
           <iframe
-            title="Company Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.1440489754577!2d79.814474!3d11.941591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a53619d38f2951d%3A0x7adf5b9c940b7f6b!2sPondicherry!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+    title="Company Location"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31130.158612416682!2d77.78515640244807!3d12.760981058056862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae711c9235a005%3A0x86df3f74f400478a!2sBegepalli%20Post%20Office!5e0!3m2!1sen!2sin!4v1755686514875!5m2!1sen!2sin"
+    width="100%"
+    height="100%"
+    style={{ border: 0 }}
+    allowFullScreen=""
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+  ></iframe>
         </div>
       </div>
 
