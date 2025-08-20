@@ -4,11 +4,13 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./Pages/Layout/Header";
 import Homemainsection from "./Pages/main/Homesection";
 import Footer from "./Pages/Layout/Footer";
+
 import ServiceSection from "./Pages/main/Services";
 import ScrollToTop from "./ScrollToTop"; // ✅ Import
 import Contact from "./Pages/Contact";
 import { Toaster } from "react-hot-toast"; // ✅ Import Toaster
 import WhatsappFloatButton from "./Pages/WhatsappFloatButton";
+import Careermain from "./Pages/main/Careermain";
 
 const App = () => {
   return (
