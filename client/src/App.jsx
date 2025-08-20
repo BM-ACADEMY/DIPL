@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./Pages/Layout/Header";
 import Homemainsection from "./Pages/main/Homesection";
 import Footer from "./Pages/Layout/Footer";
-import Careermain from "./Pages/main/careermain";
 import ServiceSection from "./Pages/main/Services";
 import ScrollToTop from "./ScrollToTop"; // ✅ Import
 import Contact from "./Pages/Contact";
