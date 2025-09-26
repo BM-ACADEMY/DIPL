@@ -26,10 +26,10 @@ const CareerSection = () => {
       >
         <div className="max-w-4xl text-center">
           <h2 className="text-3xl md:text-5xl font-bold mb-6" data-aos="fade-down">
-            Careers <span className="text-[#008688]">with Us</span>
+            Careers <span className="text-[#f0b104]">with Us</span>
           </h2>
           <p className="text-lg md:text-xl leading-relaxed mb-6" data-aos="fade-up" data-aos-delay="100">
-            At <span className="font-semibold">Dynamics India Pvt Ltd</span>, we
+            At <span className="font-semibold">Rearline</span>, we
             believe our greatest strength lies in our people. Our success is
             built on the dedication, skill, and passion of a team that thrives
             on innovation and collaboration.
@@ -49,7 +49,7 @@ const CareerSection = () => {
           {/* CTA Button */}
           <Link
             to="/career"
-            className="inline-block bg-[#008688] hover:bg-[#006d6d] text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 shadow-lg"
+            className="inline-block bg-[#f0b104] hover:bg-[#c49926] text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 shadow-lg"
             data-aos="zoom-in"
             data-aos-delay="400"
           >

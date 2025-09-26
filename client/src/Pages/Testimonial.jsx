@@ -84,7 +84,7 @@ const Reviews = () => {
         <p className="text-gray-700 py-4 italic">"{card.content}"</p>
         <div className="flex items-center justify-between text-gray-500 text-xs border-t border-gray-100 pt-3">
           <div className="flex items-center gap-1">
-            <span>Posted on DIPL</span>
+            <span>Posted on Rearline</span>
           </div>
         </div>
       </div>
@@ -99,7 +99,7 @@ const Reviews = () => {
           </h1>
           <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">
             Our{" "}
-            <span className="text-[#008688] not-italic">Clients</span>
+            <span className="text-[#f0b104] not-italic">Clients</span>
           </h1>
         
         </div>

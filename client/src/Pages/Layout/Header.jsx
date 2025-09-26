@@ -56,7 +56,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-4">
             <Link to="/">
-            <img src={Logo} alt="Logo" className="w-24 h-16" /></Link>
+            <img src={Logo} alt="Logo" className="w-46 h-12" /></Link>
           </div>
 
           {/* Desktop Menu */}
@@ -66,7 +66,7 @@ const Header = () => {
                 {/* Enquiry as modal trigger */}
                 {item.action === "modal" ? (
                   <button
-                    className="bg-[#028789] text-white font-semibold px-3 py-1 rounded-md hover:bg-[#026b6c] transition-colors duration-200"
+                    className="bg-[#f0b104] text-white font-semibold px-3 py-1 rounded-md hover:bg-[#fdbd0de0] transition-colors duration-200"
                   >
                     {item.name}
                   </button>
@@ -75,15 +75,15 @@ const Header = () => {
                     to={item.path}
                     className={`font-semibold transition-colors duration-200 ${
                       isActive(item.path)
-                        ? "text-[#00bfa5]"
-                        : "text-gray-700 hover:text-[#00bfa5]"
+                        ? "text-[#f0b104]"
+                        : "text-gray-700 hover:text-[#f0b104]"
                     }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
                   <>
-                    <button className="flex items-center text-gray-700 font-semibold group-hover:text-[#00bfa5]">
+                    <button className="flex items-center text-gray-700 font-semibold group-hover:text-[#f0b104]">
                       {item.name}
                       <ChevronDown className="ml-1 transition-transform group-hover:rotate-180" size={16} />
                     </button>
@@ -93,7 +93,7 @@ const Header = () => {
                           <Link
                             key={sub.name}
                             to={sub.path}
-                            className="block px-1 py-2 rounded hover:bg-[#e0f2f1] text-sm text-gray-800"
+                            className="block px-1 py-2 rounded hover:bg-[#ccab5031] text-sm text-gray-800"
                           >
                             <div className="font-medium">{sub.name}</div>
                             {/* <div className="text-xs text-gray-500">{sub.description}</div> */}
@@ -197,7 +197,7 @@ const Header = () => {
                       <Link
                         to={item.path}
                         className={`text-gray-700 font-semibold ${
-                          isActive(item.path) ? "text-[#00bfa5]" : "hover:text-[#00bfa5]"
+                          isActive(item.path) ? "text-[#f0b104]" : "hover:text-[#f0b1047c]"
                         }`}
                         onClick={() => setIsOffcanvasOpen(false)}
                       >

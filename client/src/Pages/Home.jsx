@@ -56,7 +56,7 @@ const heroData = [
     backgroundImage: Banner2,
     heading: "Your Trusted Partner in Industrial Growth",
     description:
-      "With a skilled team, state-of-the-art facilities, and relentless innovation, Dynamics India Pvt Ltd helps you stay ahead in today’s evolving industrial landscape.",
+      "With a skilled team, state-of-the-art facilities, and relentless innovation, Rearline helps you stay ahead in today’s evolving industrial landscape.",
     cta: {
       apply: { text: "Apply for Startup Loan", href: "#apply-startup" },
       consult: { text: "Schedule Free Call", href: "#consult-startup" },
@@ -150,7 +150,7 @@ const Home = () => {
           <div className="flex flex-col sm:flex-row gap-3">
             <Link
               to="/contact"
-              className="px-6 py-3 rounded-md font-semibold text-lg bg-emerald-600 hover:bg-emerald-500 transition"
+              className="px-6 py-3 rounded-md font-semibold text-lg bg-[#f0b104] hover:bg-[#daa925] transition"
             >
               {slide.cta.apply.text}
             </Link>

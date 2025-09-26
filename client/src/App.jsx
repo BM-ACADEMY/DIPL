@@ -9,8 +9,8 @@ import ServiceSection from "./Pages/main/Services";
 import ScrollToTop from "./ScrollToTop"; // ✅ Import
 import Contact from "./Pages/Contact";
 import { Toaster } from "react-hot-toast"; // ✅ Import Toaster
-import WhatsappFloatButton from "./Pages/WhatsappFloatButton";
 import Careermain from "./Pages/main/Careermain";
+import Whatsappfloating from "./Pages/WhatsappFloatButton";
 
 const App = () => {
   return (
@@ -24,7 +24,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
-      <WhatsappFloatButton />
+      <Whatsappfloating />
       <Toaster position="top-center" reverseOrder={false} />
     </Router>
   );

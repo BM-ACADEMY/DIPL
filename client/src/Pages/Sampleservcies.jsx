@@ -37,13 +37,13 @@ export default function Sampleservices() {
   return (
     <section className="relative bg-gradient-to-b from-gray-50 to-white pb-28 overflow-hidden">
       {/* Background circle */}
-      <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-teal-100/30 rounded-full blur-3xl mix-blend-multiply pointer-events-none"></div>
+      <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-[#f0b104]/10 rounded-full blur-3xl mix-blend-multiply pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-6 py-16 relative z-10">
         {/* Section Heading */}
         <div className="text-center mb-16" data-aos="zoom-in">
           <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
-            Our <span className="text-[#008688] not-italic">Services</span>
+            Our <span className="text-[#f0b104] not-italic">Services</span>
           </h1>
         </div>
 

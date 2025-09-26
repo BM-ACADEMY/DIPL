@@ -105,12 +105,12 @@ const ServiceSection = () => {
   };
 
   return (
-    <section className="bg-gradient-to-br from-[#f0fdfa] to-[#e6fffa] py-20 px-6 lg:px-20">
+    <section className="bg-gradient-to-br from-[#f0e7d0] to-[#f5e7c5bb] py-20 px-6 lg:px-20">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="pt-5 text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
-            Our <span className="text-[#008688]"> Services</span>
+            Our <span className="text-[#f0b104]"> Services</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Cutting-edge solutions tailored to your industrial needs with
@@ -138,7 +138,7 @@ const ServiceSection = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 </div>
                 <div className="absolute -bottom-6 left-6 bg-white p-4 rounded-lg shadow-lg transform -rotate-2 group-hover:rotate-0 transition-transform duration-500">
-                  <span className="text-teal-600 font-bold text-lg">{`0${
+                  <span className="text-[#f0b104] font-bold text-lg">{`0${
                     index + 1
                   }`}</span>
                 </div>
@@ -148,7 +148,7 @@ const ServiceSection = () => {
               <div className="md:w-1/2">
                 <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
                   <div className="flex items-center mb-6">
-                    <div className="w-1 h-10 bg-teal-500 mr-4"></div>
+                    <div className="w-1 h-10 bg-[#f0b104] mr-4"></div>
                     <h3 className="text-3xl font-bold text-gray-900">
                       {service.title}
                     </h3>

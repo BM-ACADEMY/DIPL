@@ -56,11 +56,11 @@ const Contact = () => {
   };
 
   return (
-    <section className="relative bg-gradient-to-br from-[#f0fdfa] to-[#e6fffa] py-16 px-4n overflow-hidden sm:px-6 lg:px-20">
+    <section className="relative bg-gradient-to-br from-[#f0e7d0] to-[#f5e7c5bb] py-16 px-4n overflow-hidden sm:px-6 lg:px-20">
       {/* Top Heading */}
       <div className="text-center mt-10 mb-12" data-aos="fade-up">
         <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900">
-          Contact <span className="text-[#008688]">Us</span>
+          Contact <span className="text-[#f0b104]">Us</span>
         </h2>
         <p className="mt-4 text-gray-600 max-w-2xl mx-auto text-base sm:text-lg">
           We’d love to hear from you! Get in touch with us for any queries,
@@ -85,8 +85,8 @@ const Contact = () => {
 
           <div className="space-y-6">
             <div className="flex items-start gap-4 group">
-              <div className="bg-[#008688]/10 p-3 rounded-full group-hover:bg-[#008688] transition">
-                <MapPin className="text-[#008688] group-hover:text-white w-6 h-6" />
+              <div className="bg-[#008688]/10 p-3 rounded-full group-hover:bg-[#fdf7e5] transition">
+                <MapPin className="text-[#008688]  w-6 h-6" />
               </div>
               <p className="text-gray-500 font-medium break-words">
                 No: SF NO: 52/5, PLOT NO: 11, Govinda Agraharam, Begepalli Post,
@@ -94,14 +94,14 @@ const Contact = () => {
               </p>
             </div>
             <div className="flex items-center gap-4 group">
-              <div className="bg-[#008688]/10 p-3 rounded-full group-hover:bg-[#008688] transition">
-                <Phone className="text-[#008688] group-hover:text-white w-6 h-6" />
+              <div className="bg-[#008688]/10 p-3 rounded-full group-hover:bg-[#fdf7e5] transition">
+                <Phone className="text-[#008688]  w-6 h-6" />
               </div>
               <p className="text-gray-500 font-medium">+91 98765 43210</p>
             </div>
             <div className="flex items-center gap-4 group">
-              <div className="bg-[#008688]/10 p-3 rounded-full group-hover:bg-[#008688] transition">
-                <Mail className="text-[#008688] group-hover:text-white w-6 h-6" />
+              <div className="bg-[#008688]/10 p-3 rounded-full group-hover:bg-[#fdf7e5] transition">
+                <Mail className="text-[#008688]  w-6 h-6" />
               </div>
               <p className="text-gray-500 font-medium break-words">
                 info@dynamicsindia.com
@@ -182,7 +182,7 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full bg-[#00b3a4] text-white font-semibold py-3 rounded-lg hover:bg-[#008688] transition"
+                className="w-full bg-[#f0b104] text-white font-semibold py-3 rounded-lg hover:bg-[#f0b104de] transition"
               >
                 {loading ? "Sending..." : "Submit"}
               </button>

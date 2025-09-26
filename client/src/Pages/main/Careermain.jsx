@@ -110,14 +110,14 @@ const Careermain = () => {
               className="text-3xl md:text-5xl font-bold mb-6"
               data-aos="zoom-in"
             >
-              Careers <span className="text-[#008688]">with Us</span>
+              Careers <span className="text-[#f0b104]">with Us</span>
             </h2>
             <p
               className="text-lg md:text-xl leading-relaxed mb-6"
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              At <span className="font-semibold">Dynamics India Pvt Ltd</span>,
+              At <span className="font-semibold">Rearline</span>,
               we believe our greatest strength lies in our people. Our success
               is built on the dedication, skill, and passion of a team that
               thrives on innovation and collaboration.
@@ -148,7 +148,7 @@ const Careermain = () => {
       <section className="bg-gray-200 py-16 px-6 lg:px-20">
         <div className="max-w-7xl mx-auto text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900">
-            Why Work <span className="text-[#008688]">With Us?</span>
+            Why Work <span className="text-[#f0b104]">With Us?</span>
           </h2>
           <p className="mt-4 text-gray-600 text-lg max-w-2xl mx-auto">
             Join a forward-thinking organization that values innovation, growth,
@@ -164,7 +164,7 @@ const Careermain = () => {
               className="relative bg-white p-6 rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl group w-72"
             >
               {/* Overlay */}
-              <div className="absolute inset-0 bg-[#008688] opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-xl"></div>
+              <div className="absolute inset-0 bg-[#f0b104] opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-xl"></div>
 
               {/* Content */}
               <div className="relative z-10 text-center">
@@ -182,7 +182,7 @@ const Careermain = () => {
       <section className="bg-gray-50 py-16 px-6 lg:px-20">
         <div className="max-w-7xl mx-auto text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900">
-            Who We <span className="text-[#008688]">Look For</span>
+            Who We <span className="text-[#f0b104]">Look For</span>
           </h2>
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
             We seek individuals who embody the qualities that drive innovation,
@@ -194,7 +194,7 @@ const Careermain = () => {
           {qualities.map((item, index) => (
             <div
               key={index}
-              className="bg-[#04838559] shadow-lg rounded-xl p-6 flex flex-col items-center text-center hover:scale-105 transition-transform duration-300"
+              className="bg-[#fdf7e5] shadow-xl rounded-xl p-6 flex flex-col items-center text-center hover:scale-105 transition-transform duration-300"
             >
               {/* Icon wrapper */}
               <div className="bg-[#008688] p-4 rounded-full mb-4 flex items-center justify-center">
@@ -224,14 +224,14 @@ const Careermain = () => {
 
       <div className="relative max-w-7xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-extrabold mb-6">
-          Join <span className="text-[#0bb0b3]">Our Team</span>
+          Join <span className="text-[#f0b104]">Our Team</span>
         </h2>
         <p className="text-lg md:text-xl mb-12">
           If you’re ready to take your career to the next level, explore our current job openings
           or send your resume to{" "}
           <a
             href="mailto:careers@yourcompany.com"
-            className="underline text-[#00e6e6] hover:text-[#00cccc]"
+            className="underline text-[#f0b104] hover:text-[#f0b104da]"
           >
             careers@yourcompany.com
           </a>
@@ -245,11 +245,11 @@ const Careermain = () => {
               key={category}
               className="bg-white/20 backdrop-blur-md p-6 rounded-xl shadow-lg transition"
             >
-              <h3 className="text-2xl text-[#00e6e6] font-semibold mb-4">{category}</h3>
+              <h3 className="text-2xl text-[#f0b104] font-semibold mb-4">{category}</h3>
               <ul className="space-y-3">
                 {items.map((item, idx) => (
                   <li key={idx} className="flex items-center gap-2">
-                    <HiCheck className="text-[#00e6e6] w-5 h-5 flex-shrink-0" />
+                    <HiCheck className="text-[#f0b104] w-5 h-5 flex-shrink-0" />
                     <span>{item}</span>
                   </li>
                 ))}

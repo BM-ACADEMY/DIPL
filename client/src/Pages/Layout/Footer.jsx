@@ -1,7 +1,7 @@
 import React from "react";
 import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 import { Link } from "react-router-dom"; // ✅ Import Link
-import Logo from "@/assets/img/logo.png"; // <-- Import your logo image
+import Logo from "@/assets/img/logowhite.png"; // <-- Import your logo image
 
 export default function Example() {
   return (
@@ -17,32 +17,32 @@ export default function Example() {
           />
 
           <p className="mt-6 text-sm text-gray-300">
-            Dynamics India Pvt Ltd delivers cutting-edge automation and engineering solutions with precision, durability, and innovation. We empower industries to operate smarter, faster, and more efficiently with tailor-made solutions. 
+            Rearline delivers cutting-edge automation and engineering solutions with precision, durability, and innovation. We empower industries to operate smarter, faster, and more efficiently with tailor-made solutions. 
           </p>
 
           {/* Social Icons */}
           <div className="flex gap-4 mt-6 text-white">
             <a
               href="#"
-              className="p-2 rounded-full border border-gray-500/30 hover:bg-[#018687] hover:text-white transition"
+              className="p-2 rounded-full border border-gray-500/30 hover:bg-[#f0b104] hover:text-white transition"
             >
               <Facebook size={18} />
             </a>
             <a
               href="#"
-              className="p-2 rounded-full border border-gray-500/30 hover:bg-[#018687] hover:text-white transition"
+              className="p-2 rounded-full border border-gray-500/30 hover:bg-[#f0b104] hover:text-white transition"
             >
               <Twitter size={18} />
             </a>
             <a
               href="#"
-              className="p-2 rounded-full border border-gray-500/30 hover:bg-[#018687] hover:text-white transition"
+              className="p-2 rounded-full border border-gray-500/30 hover:bg-[#f0b104] hover:text-white transition"
             >
               <Instagram size={18} />
             </a>
             <a
               href="#"
-              className="p-2 rounded-full border border-gray-500/30 hover:bg-[#018687] hover:text-white transition"
+              className="p-2 rounded-full border border-gray-500/30 hover:bg-[#f0b104] hover:text-white transition"
             >
               <Linkedin size={18} />
             </a>
@@ -56,10 +56,10 @@ export default function Example() {
           <div>
             <h2 className="font-semibold mb-5 text-gray-100">Company</h2>
             <ul className="text-sm space-y-2 text-gray-300">
-              <li><Link to="/" className="hover:text-[#018687]">Home</Link></li>
-              <li><Link to="/services" className="hover:text-[#018687]">Services</Link></li>
-              <li><Link to="/career" className="hover:text-[#018687]">Career</Link></li>
-              <li><Link to="/contact" className="hover:text-[#018687]">Contact</Link></li>
+              <li><Link to="/" className="hover:text-[#f0b104]">Home</Link></li>
+              <li><Link to="/services" className="hover:text-[#f0b104]">Services</Link></li>
+              <li><Link to="/career" className="hover:text-[#f0b104]">Career</Link></li>
+              <li><Link to="/contact" className="hover:text-[#f0b104]">Contact</Link></li>
             </ul>
           </div>
 
@@ -67,9 +67,9 @@ export default function Example() {
           <div>
             <h2 className="font-semibold mb-5 text-gray-100">Services</h2>
             <ul className="text-sm space-y-2 text-gray-300">
-              <li><Link to="/services" className="hover:text-[#018687]">Automation</Link></li>
-              <li><Link to="/services" className="hover:text-[#018687]">Fixtures, Toolings and Gauges</Link></li>
-              <li><Link to="/services" className="hover:text-[#018687]">Manufacturing and Fabrication</Link></li>
+              <li><Link to="/services" className="hover:text-[#f0b104]">Automation</Link></li>
+              <li><Link to="/services" className="hover:text-[#f0b104]">Fixtures, Toolings and Gauges</Link></li>
+              <li><Link to="/services" className="hover:text-[#f0b104]">Manufacturing and Fabrication</Link></li>
             </ul>
           </div>
 
@@ -84,7 +84,7 @@ export default function Example() {
             href="https://bmtechx.in"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#018687] font-semibold"
+            className="text-[#f0b104] font-semibold"
           >
             BMTechx.in
           </a>{" "}

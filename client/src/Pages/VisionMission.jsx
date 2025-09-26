@@ -17,13 +17,13 @@ const VisionMission = () => {
   return (
     <section className="relative bg-gray-200  py-20 px-6 lg:px-20 overflow-hidden">
       {/* Decorative gradient blur */}
-<div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-teal-100/20 rounded-full blur-3xl mix-blend-multiply"></div>
+<div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-[#f0b104]/10 rounded-full blur-3xl mix-blend-multiply"></div>
 
       {/* Header */}
       <div className="relative z-10 text-center mb-16" data-aos="zoom-in">
         <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
           Our Vision &{" "}
-          <span className="text-[#008688] not-italic">Mission</span>
+          <span className="text-[#f0b104] not-italic">Mission</span>
         </h1>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto mt-4">
           Innovation, sustainability, and precision engineering that empower
@@ -72,7 +72,7 @@ const VisionMission = () => {
               <h3 className="text-2xl font-bold text-gray-800">Our Mission</h3>
             </div>
             <p className="text-gray-700 leading-relaxed mb-6">
-              At Dynamics India Pvt Ltd, our mission is to design, develop, and
+              At Rearline, our mission is to design, develop, and
               deliver innovative automation and precision engineering solutions
               that enable clients to achieve higher productivity, quality, and
               efficiency.
