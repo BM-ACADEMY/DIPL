@@ -7,7 +7,7 @@ const Whatsappfloating = () => {
     <div>
       {/* Floating WhatsApp Button */}
       <FloatingWhatsApp
-        phoneNumber="+919840622848" // Replace with your WhatsApp number
+        phoneNumber="+919677950619" // Replace with your WhatsApp number
         accountName="Rearline"
         avatar={Logo}
         statusMessage="online"

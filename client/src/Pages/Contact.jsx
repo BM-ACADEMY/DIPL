@@ -20,40 +20,41 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
 
   const scriptURL =
-    "https://script.google.com/macros/s/AKfycbyuQ0nQS9Hit7O4PJ1bm9mxyavunFqv-6iw3drzP1QXpwnpiorpepXQ369B_auDRgY/exec";
+    "https://script.google.com/macros/s/AKfycbwgW3A1bIX_65jIY0zpdAcWmACVsC5iWexW7_MgpOG9QTniBhSJbJJmygY2x-QKbAD6Fw/exec";
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
+ const handleSubmit = async (e) => {
+  e.preventDefault();
+  setLoading(true);
 
-    const form = new FormData();
-    form.append("name", formData.name);
-    form.append("email", formData.email);
-    form.append("phone", formData.phone);
-    form.append("message", formData.message);
+  const form = new FormData();
+  form.append("name", formData.name);
+  form.append("email", formData.email);
+  form.append("phone", formData.phone);
+  form.append("message", formData.message);
 
-    try {
-      const response = await fetch(scriptURL, { method: "POST", body: form });
-      if (!response.ok) throw new Error("Network response was not ok");
+  try {
+    await fetch(scriptURL, {
+      method: "POST",
+      mode: "no-cors",  // ✅ Important
+      body: form,
+    });
 
-      const data = await response.json();
-      if (data.status === "success") {
-        toast.success("Enquiry sent successfully!");
-        setFormData({ name: "", email: "", phone: "", message: "" });
-      } else {
-        toast.error("An error occurred: " + data.message);
-      }
-    } catch (error) {
-      console.error("Submission error:", error);
-      toast.error("Failed to submit form. Please try again.");
-    } finally {
-      setLoading(false);
-    }
-  };
+    // We assume it succeeded
+    toast.success("Enquiry sent successfully!");
+    setFormData({ name: "", email: "", phone: "", message: "" });
+
+  } catch (error) {
+    console.error("Submission error:", error);
+    toast.error("Failed to submit form. Please try again.");
+  } finally {
+    setLoading(false);
+  }
+};
+
 
   return (
     <section className="relative bg-gradient-to-br from-[#f0e7d0] to-[#f5e7c5bb] py-16 px-4n overflow-hidden sm:px-6 lg:px-20">
@@ -97,14 +98,14 @@ const Contact = () => {
               <div className="bg-[#008688]/10 p-3 rounded-full group-hover:bg-[#fdf7e5] transition">
                 <Phone className="text-[#008688]  w-6 h-6" />
               </div>
-              <p className="text-gray-500 font-medium">+91 98765 43210</p>
+              <p className="text-gray-500 font-medium">+91 9677950619</p>
             </div>
             <div className="flex items-center gap-4 group">
               <div className="bg-[#008688]/10 p-3 rounded-full group-hover:bg-[#fdf7e5] transition">
                 <Mail className="text-[#008688]  w-6 h-6" />
               </div>
               <p className="text-gray-500 font-medium break-words">
-                info@dynamicsindia.com
+                kowsikkumarkp@gmail.com
               </p>
             </div>
           </div>
