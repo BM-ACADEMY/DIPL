@@ -13,10 +13,7 @@ const heroData = [
     heading: "Engineering Innovation, Delivering Excellence",
     description:
       "We design and deliver world-class automation solutions that redefine productivity, efficiency, and precision for modern industries.",
-    cta: {
-      apply: { text: "Apply Now", href: "#apply" },
-      consult: { text: "Book a Free Consultation", href: "#consultation" },
-    },
+    cta: { text: "Apply Now" },
   },
   {
     id: 2,
@@ -24,10 +21,7 @@ const heroData = [
     heading: "Automation That Empowers",
     description:
       "From line automation and SPMs to robotics and AGVs, our advanced technologies help businesses operate smarter, faster, and more efficiently.",
-    cta: {
-      apply: { text: "Get Business Loan", href: "#apply-business" },
-      consult: { text: "Talk to an Expert", href: "#consult-business" },
-    },
+    cta: { text: "Apply Now" },
   },
   {
     id: 3,
@@ -35,10 +29,7 @@ const heroData = [
     heading: "Integrity. Quality. Customer-Centricity.",
     description:
       "Our values drive us to create tailor-made solutions that exceed expectations, ensuring long-term partnerships built on trust and results.",
-    cta: {
-      apply: { text: "Apply for Home Loan", href: "#apply-home" },
-      consult: { text: "Free Home Loan Advice", href: "#consult-home" },
-    },
+    cta: { text: "Apply Now" },
   },
   {
     id: 4,
@@ -46,10 +37,7 @@ const heroData = [
     heading: "Precision at Every Step",
     description:
       "With unmatched craftsmanship and attention to detail, we provide durable and efficient solutions—from concept to commissioning.",
-    cta: {
-      apply: { text: "Apply for Education Loan", href: "#apply-edu" },
-      consult: { text: "Get Counseling", href: "#consult-edu" },
-    },
+    cta: { text: "Apply Now" },
   },
   {
     id: 5,
@@ -57,10 +45,7 @@ const heroData = [
     heading: "Your Trusted Partner in Industrial Growth",
     description:
       "With a skilled team, state-of-the-art facilities, and relentless innovation, Rearline helps you stay ahead in today’s evolving industrial landscape.",
-    cta: {
-      apply: { text: "Apply for Startup Loan", href: "#apply-startup" },
-      consult: { text: "Schedule Free Call", href: "#consult-startup" },
-    },
+    cta: { text: "Apply Now" },
   },
 ];
 
@@ -76,15 +61,11 @@ const Home = () => {
   };
 
   const pauseAutoPlay = () => {
-    if (timerRef.current) {
-      clearInterval(timerRef.current);
-    }
+    if (timerRef.current) clearInterval(timerRef.current);
   };
 
   useEffect(() => {
-    if (!isPaused) {
-      startAutoPlay();
-    }
+    if (!isPaused) startAutoPlay();
     return () => pauseAutoPlay();
   }, [isPaused]);
 
@@ -105,30 +86,25 @@ const Home = () => {
   const slide = heroData[currentSlide];
 
   return (
-    <div
-      className="relative w-full h-[95vh] overflow-hidden group bg-black"
-      id="home"
-    >
+    <div className="relative w-full h-[95vh] overflow-hidden group bg-black" id="home">
       {/* Background image with fade transition */}
       <AnimatePresence mode="popLayout">
-       <motion.div
-  key={slide.id}
-  className="absolute inset-0"
-  initial={{ opacity: 0 }}
-  animate={{ opacity: 1 }}
-  exit={{ opacity: 0 }}
-  transition={{ duration: 1 }}
->
-  <img
-    src={slide.backgroundImage}
-    alt={slide.heading}
-    className="w-full h-full object-cover object-top"
-/>
-
-  {/* Black Overlay */}
-  <div className="absolute inset-0 bg-black/40"></div>
-</motion.div>
-
+        <motion.div
+          key={slide.id}
+          className="absolute inset-0"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 1 }}
+        >
+          <img
+            src={slide.backgroundImage}
+            alt={slide.heading}
+            className="w-full h-full object-cover object-top"
+          />
+          {/* Black Overlay */}
+          <div className="absolute inset-0 bg-black/40"></div>
+        </motion.div>
       </AnimatePresence>
 
       {/* Content */}
@@ -140,27 +116,16 @@ const Home = () => {
           transition={{ duration: 0.8 }}
           className="flex flex-col items-center max-w-4xl"
         >
-          <h1 className="text-3xl sm:text-5xl font-bold mb-4">
-            {slide.heading}
-          </h1>
-          <p className="text-base sm:text-lg text-gray-200 mb-6">
-            {slide.description}
-          </p>
+          <h1 className="text-3xl sm:text-5xl font-bold mb-4">{slide.heading}</h1>
+          <p className="text-base sm:text-lg text-gray-200 mb-6">{slide.description}</p>
 
-          <div className="flex flex-col sm:flex-row gap-3">
-            <Link
-              to="/contact"
-              className="px-6 py-3 rounded-md font-semibold text-lg bg-[#f0b104] hover:bg-[#daa925] transition"
-            >
-              {slide.cta.apply.text}
-            </Link>
-            <Link
-              to="/contact"
-              className="px-6 py-3 rounded-md font-semibold text-lg bg-white/30 hover:bg-white/20 border border-white/20"
-            >
-              {slide.cta.consult.text}
-            </Link>
-          </div>
+          {/* Single CTA Button */}
+          <Link
+            to="/contact"
+            className="px-6 py-3 rounded-md font-semibold text-lg bg-[#f0b104] hover:bg-[#daa925] transition"
+          >
+            {slide.cta.text}
+          </Link>
         </motion.div>
       </div>
 

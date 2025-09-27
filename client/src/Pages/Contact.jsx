@@ -90,8 +90,7 @@ const Contact = () => {
                 <MapPin className="text-[#008688]  w-6 h-6" />
               </div>
               <p className="text-gray-500 font-medium break-words">
-                No: SF NO: 52/5, PLOT NO: 11, Govinda Agraharam, Begepalli Post,
-                Hosur, Krishnagiri, Tamil Nadu, PIN Code: 635126.
+                Sf.No.52/5, D.No.7/488/A, Rajeshwari Layout, Govinda Agraharam Village, Begepalli Post, Hosur-635 126, Hosur Taluk, Krishnagiri District, Tamil Nadu, India
               </p>
             </div>
             <div className="flex items-center gap-4 group">
@@ -105,7 +104,7 @@ const Contact = () => {
                 <Mail className="text-[#008688]  w-6 h-6" />
               </div>
               <p className="text-gray-500 font-medium break-words">
-                kowsikkumarkp@gmail.com
+                sales@rearline.in
               </p>
             </div>
           </div>
@@ -118,7 +117,7 @@ const Contact = () => {
         >
           <iframe
     title="Company Location"
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31130.158612416682!2d77.78515640244807!3d12.760981058056862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae711c9235a005%3A0x86df3f74f400478a!2sBegepalli%20Post%20Office!5e0!3m2!1sen!2sin!4v1755686514875!5m2!1sen!2sin"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3891.065050294587!2d77.80059161095556!3d12.774287487471199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae70c883f728a3%3A0x945404124d2f2a8d!2sQRF3%2BP77%2C%20Hosur%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1758950833672!5m2!1sen!2sin"
     width="100%"
     height="100%"
     style={{ border: 0 }}

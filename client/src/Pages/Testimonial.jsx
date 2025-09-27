@@ -7,7 +7,7 @@ const Reviews = () => {
       name: "Rajesh K.",
       handle: "@automotiveLeader",
       content:
-        "Dynamics India's automation solutions transformed our production line. Zero downtime and maximum efficiency!",
+        "Rearline automation solutions transformed our production line. Zero downtime and maximum efficiency!",
     },
     {
       name: "Sneha P.",
@@ -25,7 +25,7 @@ const Reviews = () => {
       name: "Anita G.",
       handle: "@precisionEngineering",
       content:
-        "Fixtures and tooling from Dynamics India are world-class—precision and durability that keep our shop floor running smoothly.",
+        "Fixtures and tooling from Rearline are world-class—precision and durability that keep our shop floor running smoothly.",
     },
     {
       name: "Harish R.",
