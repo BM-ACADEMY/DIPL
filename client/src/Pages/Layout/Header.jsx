@@ -12,19 +12,20 @@ const Header = () => {
   
 
   const mainNavLinks = [
-    { name: "Home", path: "/" },
-    {
-      name: "Services",
-      hasDropdown: true,
-      dropdownContent: [
-        { name: "Automation", path: "/services", description: "Centre for Distance Education" },
-        { name: "Fixtures, Toolings & Gauges", path: "/services", description: "Centre for Distance Education" },
-        { name: "Manufacturing", path: "/services", description: "Centre for Distance Education" },
-      ],
-    },
-    { name: "Career", path: "/career" },
-    { name: "Contact", path: "/contact" },
-  ];
+  { name: "Home", path: "/" },
+  {
+    name: "Services",
+    hasDropdown: true,
+    dropdownContent: [
+      { name: "Automation", path: "/services#automation" },
+      { name: "Fixtures, Toolings & Gauges", path: "/services#fixtures,-toolings-and-gauges" },
+      { name: "Manufacturing", path: "/services#manufacturing-and-fabrication" },
+    ],
+  },
+  { name: "Career", path: "/career" },
+  { name: "Contact", path: "/contact" },
+];
+
 
   const dropdownContentVariants = {
     hidden: { height: 0, opacity: 0, overflow: "hidden" },

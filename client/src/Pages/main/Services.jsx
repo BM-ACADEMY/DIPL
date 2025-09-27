@@ -121,12 +121,14 @@ const ServiceSection = () => {
         {/* Services Grid */}
         <div className="space-y-20">
           {servicesData.map((service, index) => (
-            <div
-              key={index}
-              className={`flex flex-col md:flex-row items-center gap-12 ${
-                index % 2 !== 0 ? "md:flex-row-reverse" : ""
-              }`}
-            >
+  <div
+  key={index}
+  id={service.title.replace(/\s+/g, "-").toLowerCase()}
+  className={`flex flex-col md:flex-row items-center gap-12 ${
+    index % 2 !== 0 ? "md:flex-row-reverse" : ""
+  } scroll-mt-28`}  // 👈 this fixes the hidden top issue
+>
+
               {/* Image Section */}
               <div className="md:w-1/2 relative group">
                 <div className="relative overflow-hidden rounded-xl shadow-2xl">
