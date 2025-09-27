@@ -13,7 +13,7 @@ const heroData = [
     heading: "Engineering Innovation, Delivering Excellence",
     description:
       "We design and deliver world-class automation solutions that redefine productivity, efficiency, and precision for modern industries.",
-    cta: { text: "Apply Now" },
+    cta: { text: "Connect with Us" },
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const heroData = [
     heading: "Automation That Empowers",
     description:
       "From line automation and SPMs to robotics and AGVs, our advanced technologies help businesses operate smarter, faster, and more efficiently.",
-    cta: { text: "Apply Now" },
+    cta: { text: "Connect with Us" },
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const heroData = [
     heading: "Integrity. Quality. Customer-Centricity.",
     description:
       "Our values drive us to create tailor-made solutions that exceed expectations, ensuring long-term partnerships built on trust and results.",
-    cta: { text: "Apply Now" },
+    cta: { text: "Connect with Us" },
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ const heroData = [
     heading: "Precision at Every Step",
     description:
       "With unmatched craftsmanship and attention to detail, we provide durable and efficient solutions—from concept to commissioning.",
-    cta: { text: "Apply Now" },
+    cta: { text: "Connect with Us" },
   },
   {
     id: 5,
@@ -45,7 +45,7 @@ const heroData = [
     heading: "Your Trusted Partner in Industrial Growth",
     description:
       "With a skilled team, state-of-the-art facilities, and relentless innovation, Rearline helps you stay ahead in today’s evolving industrial landscape.",
-    cta: { text: "Apply Now" },
+    cta: { text: "Connect with Us" },
   },
 ];
 
