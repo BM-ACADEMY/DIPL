@@ -85,29 +85,50 @@ const Contact = () => {
           </p>
 
           <div className="space-y-6">
-            <div className="flex items-start gap-4 group">
-              <div className="bg-[#008688]/10 p-3 rounded-full group-hover:bg-[#fdf7e5] transition">
-                <MapPin className="text-[#008688]  w-6 h-6" />
-              </div>
-              <p className="text-gray-500 font-medium break-words">
-                Sf.No.52/5, D.No.7/488/A, Rajeshwari Layout, Govinda Agraharam Village, Begepalli Post, Hosur-635 126, Hosur Taluk, Krishnagiri District, Tamil Nadu, India
-              </p>
-            </div>
-            <div className="flex items-center gap-4 group">
-              <div className="bg-[#008688]/10 p-3 rounded-full group-hover:bg-[#fdf7e5] transition">
-                <Phone className="text-[#008688]  w-6 h-6" />
-              </div>
-              <p className="text-gray-500 font-medium">+91 9677950619</p>
-            </div>
-            <div className="flex items-center gap-4 group">
-              <div className="bg-[#008688]/10 p-3 rounded-full group-hover:bg-[#fdf7e5] transition">
-                <Mail className="text-[#008688]  w-6 h-6" />
-              </div>
-              <p className="text-gray-500 font-medium break-words">
-                sales@rearline.in
-              </p>
-            </div>
-          </div>
+  {/* Address */}
+  <div className="flex items-start gap-4 group">
+    <div className="bg-[#008688]/10 p-3 rounded-full group-hover:bg-[#fdf7e5] transition">
+      <MapPin className="text-[#008688]  w-6 h-6" />
+    </div>
+    <a
+      href="https://www.google.com/maps/place/QRF3%2BP77,+Hosur,+Tamil+Nadu/@12.774288,77.803172,16z/data=!4m5!3m4!1s0x3bae70c883f728a3:0x945404124d2f2a8d!8m2!3d12.7742875!4d77.8031719?hl=en&entry=ttu"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-gray-500 font-medium break-words hover:text-[#008688] transition"
+    >
+      Sf.No.52/5, D.No.7/488/A, Rajeshwari Layout, Govinda Agraharam Village,
+      Begepalli Post, Hosur-635 126, Hosur Taluk, Krishnagiri District,
+      Tamil Nadu, India
+    </a>
+  </div>
+
+  {/* Phone */}
+  <div className="flex items-center gap-4 group">
+    <div className="bg-[#008688]/10 p-3 rounded-full group-hover:bg-[#fdf7e5] transition">
+      <Phone className="text-[#008688]  w-6 h-6" />
+    </div>
+    <a
+      href="tel:+919677950619"
+      className="text-gray-500 font-medium hover:text-[#008688] transition"
+    >
+      +91 9677950619
+    </a>
+  </div>
+
+  {/* Email */}
+  <div className="flex items-center gap-4 group">
+    <div className="bg-[#008688]/10 p-3 rounded-full group-hover:bg-[#fdf7e5] transition">
+      <Mail className="text-[#008688]  w-6 h-6" />
+    </div>
+    <a
+      href="mailto:sales@rearline.in"
+      className="text-gray-500 font-medium break-words hover:text-[#008688] transition"
+    >
+      sales@rearline.in
+    </a>
+  </div>
+</div>
+
         </div>
 
         {/* Right: Google Map */}
